@@ -1,0 +1,164 @@
+.about-page {}
+
+.about-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.about-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+  align-items: start;
+}
+
+.about-text h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #1a237e;
+  margin: 0 0 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #546e7a;
+  line-height: 1.75;
+  margin: 0 0 16px;
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #f5f7ff;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.highlight-icon {
+  font-size: 28px;
+  width: 48px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.highlight-item div {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-item strong {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a237e;
+}
+
+.highlight-item span {
+  font-size: 13px;
+  color: #78909c;
+}
+
+/* Mission / Vision */
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.mv-card {
+  border-radius: 14px;
+  padding: 32px;
+  color: #ffffff;
+}
+
+.mv-card--mission {
+  background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+}
+
+.mv-card--vision {
+  background: linear-gradient(135deg, #004d40 0%, #00897b 100%);
+}
+
+.mv-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 14px;
+}
+
+.mv-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Values */
+.values-section h2 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a237e;
+  margin: 0 0 28px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  background: #ffffff;
+  border: 1px solid #e8eaf6;
+  border-radius: 12px;
+  padding: 24px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.value-icon {
+  font-size: 32px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.value-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a237e;
+  margin: 0 0 8px;
+}
+
+.value-card p {
+  font-size: 14px;
+  color: #546e7a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-story {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-vision {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
