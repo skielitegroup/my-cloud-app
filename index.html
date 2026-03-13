@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cloud App</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+        .card { border: 1px solid #ccc; padding: 20px; border-radius: 10px; display: inline-block; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>☁️ My HR Cloud Software</h1>
+        <p>Status: <b>Live on the Cloud</b></p>
+        <p>Current Time: <span id="time"></span></p>
+    </div>
+    <script>
+        document.getElementById('time').innerText = new Date().toLocaleTimeString();
+    </script>
+</body>
+</html>
