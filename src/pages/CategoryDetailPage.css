@@ -1,5 +1,3 @@
-.cat-detail {}
-
 .cat-detail-hero {
   color: #ffffff;
   padding: 60px 24px;
@@ -29,8 +27,6 @@
   max-width: 600px;
   margin: 0;
 }
-
-.products-section {}
 
 .products-inner {
   max-width: 1200px;
